@@ -32,6 +32,12 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 |---------|-------------|
 | [MMU — Sv32 Memory Management Unit](https://github.com/BrendanJamesLynskey/MMU) | Synthesisable SystemVerilog Sv32 MMU with TLB, hardware page table walker, permission checking, and SFENCE.VMA support. Full SV + CocoTB verification suite (131 tests) |
 
+## Interrupt Controllers
+
+| Project | Description |
+|---------|-------------|
+| [RISCV_PLIC](https://github.com/BrendanJamesLynskey/RISCV_PLIC) | RISC-V Platform-Level Interrupt Controller — parameterised, synthesisable, edge/level gateways, claim/complete, memory-mapped registers |
+
 ## Power Electronics
 
 | Project | Description |
