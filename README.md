@@ -26,6 +26,12 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 |---------|-------------|
 | [Transformer Decoder — RTL Accelerator](https://github.com/BrendanJamesLynskey/LLM_Transformer_Decoder_RTL) | Synthesisable SystemVerilog implementation of a pre-norm decoder block with KV-cache, plus full verification suite (83 tests) |
 
+## Memory Management
+
+| Project | Description |
+|---------|-------------|
+| [MMU — Sv32 Memory Management Unit](https://github.com/BrendanJamesLynskey/MMU) | Synthesisable SystemVerilog Sv32 MMU with TLB, hardware page table walker, permission checking, and SFENCE.VMA support. Full SV + CocoTB verification suite (131 tests) |
+
 ## Power Electronics
 
 | Project | Description |
