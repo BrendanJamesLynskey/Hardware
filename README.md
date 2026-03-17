@@ -1,6 +1,6 @@
-# Digital Hardware
+# Hardware
 
-A collection of synthesisable RTL designs and educational resources covering CPU architecture, arithmetic hardware, and SoC design.
+A collection of synthesisable RTL designs, power electronics projects, and educational resources covering CPU architecture, arithmetic hardware, SoC design, and DC-DC converter control.
 
 ---
 
@@ -25,6 +25,13 @@ A collection of synthesisable RTL designs and educational resources covering CPU
 | Project | Description |
 |---------|-------------|
 | [Transformer Decoder — RTL Accelerator](https://github.com/BrendanJamesLynskey/LLM_Transformer_Decoder_RTL) | Synthesisable SystemVerilog implementation of a pre-norm decoder block with KV-cache, plus full verification suite (83 tests) |
+
+## Power Electronics
+
+| Project | Description |
+|---------|-------------|
+| [DC-DC Converter Control Techniques](https://github.com/BrendanJamesLynskey/DCDC_Control_Techniques) | Interactive Reveal.js presentation covering PWM (voltage-mode, peak/valley/average current-mode), PFM, hysteretic, and constant on-time (COT) control — with interactive waveform and efficiency graphics, tradeoff comparisons, and future directions including digital control and GaN |
+| [COT DC-DC Converter](https://github.com/BrendanJamesLynskey/COT_DCDC_Simulink) | MATLAB/Simulink constant on-time DC-DC converter model, adapted from the NPTEL course on switched mode power converter control |
 
 ## SoC Design
 
