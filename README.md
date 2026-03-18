@@ -38,6 +38,12 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 |---------|-------------|
 | [RISCV_PLIC](https://github.com/BrendanJamesLynskey/RISCV_PLIC) | RISC-V Platform-Level Interrupt Controller — parameterised, synthesisable, edge/level gateways, claim/complete, memory-mapped registers |
 
+## On-Chip Interconnect
+
+| Project | Description |
+|---------|-------------|
+| [AXI4 Crossbar Interconnect](https://github.com/BrendanJamesLynskey/AXI4_Crossbar) | Parameterised AXI4 crossbar fabric in SystemVerilog — independent read/write paths, per-slave round-robin arbitration, ID-based response routing, internal error slave. Full verification suite (109 tests) |
+
 ## Power Electronics
 
 | Project | Description |
