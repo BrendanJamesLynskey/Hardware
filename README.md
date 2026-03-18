@@ -31,6 +31,7 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 | Project | Description |
 |---------|-------------|
 | [MMU — Sv32 Memory Management Unit](https://github.com/BrendanJamesLynskey/MMU) | Synthesisable SystemVerilog Sv32 MMU with TLB, hardware page table walker, permission checking, and SFENCE.VMA support. Full SV + CocoTB verification suite (131 tests) |
+| [Cache Controller — MESI Coherence](https://github.com/BrendanJamesLynskey/Cache_Controller_MESI) | Synthesisable cache controller with MESI coherence, 4-way set-associative, write-back/write-allocate, true LRU, AXI4 bus interface, snoop handling, writeback buffer. Full SV + CocoTB verification suite (315 tests) |
 
 ## Interrupt Controllers
 
