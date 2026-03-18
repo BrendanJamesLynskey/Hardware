@@ -22,6 +22,7 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 | [Cache Controller (MESI)](https://github.com/BrendanJamesLynskey/Cache_Controller_MESI) | L2 Cache | 4-way set-associative cache with MESI coherence, write-back policy, snoop interface, AXI4 bus interface |
 | [DMA Controller](https://github.com/BrendanJamesLynskey/RISCV_DMA) | DMA Engine | 4-channel DMA with scatter-gather, AXI4 master, per-channel interrupts |
 | [IOMMU (Sv32)](https://github.com/BrendanJamesLynskey/RISCV_IOMMU) | I/O Translation | I/O address translation for DMA isolation — IOTLB, device context cache, fault handling |
+| [PLIC](https://github.com/BrendanJamesLynskey/RISCV_PLIC) | Interrupt Controller | Platform-Level Interrupt Controller — priority-based arbitration, configurable enable/threshold, claim/complete |
 
 ---
 
