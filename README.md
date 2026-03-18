@@ -46,6 +46,12 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 |---------|-------------|
 | [AXI4 Crossbar Interconnect](https://github.com/BrendanJamesLynskey/AXI4_Crossbar) | Parameterised AXI4 crossbar fabric in SystemVerilog — independent read/write paths, per-slave round-robin arbitration, ID-based response routing, internal error slave. Full verification suite (109 tests) |
 
+## DMA Controllers
+
+| Project | Description |
+|---------|-------------|
+| [RISCV_DMA — Multi-Channel DMA Controller](https://github.com/BrendanJamesLynskey/RISCV_DMA) | Multi-channel DMA controller — AXI4 master, scatter-gather, round-robin/fixed-priority arbiter. Full SV + CocoTB verification suite (282 tests) |
+
 ## Power Electronics
 
 | Project | Description |
