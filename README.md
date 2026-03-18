@@ -4,12 +4,32 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 
 ---
 
+## RISC-V SoC Platform
+
+A complete RISC-V System-on-Chip built from independently verified subsystems.
+
+| Project | Description |
+|---------|-------------|
+| [RISC-V SoC — System Integration](https://github.com/BrendanJamesLynskey/RISCV_SoC) | **Top-level SoC** integrating CPU, crossbar, MMU, cache, DMA, and IOMMU into a unified bus-connected system with PLIC, SRAM, and peripheral bridge |
+
+### SoC Subsystems
+
+| Project | Role in SoC | Description |
+|---------|-------------|-------------|
+| [BRV32P — 5-Stage Pipelined RV32IMC](https://github.com/BrendanJamesLynskey/RISCV_RV32IMC_5stage) | CPU Core | In-order 5-stage pipeline with full forwarding, 2-way set-associative caches, AXI4-Lite bus, branch prediction, M and C extensions |
+| [AXI4 Crossbar](https://github.com/BrendanJamesLynskey/AXI4_Crossbar) | Interconnect | Parameterised NxM AXI4 crossbar — round-robin arbitration, ID-based response routing, error slave, independent read/write paths |
+| [MMU (Sv32)](https://github.com/BrendanJamesLynskey/MMU) | Virtual Memory | Sv32 MMU with fully-associative TLB, hardware page table walker, permission checking, SFENCE.VMA support |
+| [Cache Controller (MESI)](https://github.com/BrendanJamesLynskey/Cache_Controller_MESI) | L2 Cache | 4-way set-associative cache with MESI coherence, write-back policy, snoop interface, AXI4 bus interface |
+| [DMA Controller](https://github.com/BrendanJamesLynskey/RISCV_DMA) | DMA Engine | 4-channel DMA with scatter-gather, AXI4 master, per-channel interrupts |
+| [IOMMU (Sv32)](https://github.com/BrendanJamesLynskey/RISCV_IOMMU) | I/O Translation | I/O address translation for DMA isolation — IOTLB, device context cache, fault handling |
+
+---
+
 ## RISC-V CPUs
 
 | Project | Description |
 |---------|-------------|
 | [BRV32 — Single-Cycle RV32I](https://github.com/BrendanJamesLynskey/RISCV_RV32I_SingleCycle) | Complete single-cycle RV32I SoC in Verilog-2001 — CPU, GPIO, UART, Timer, machine-mode CSRs. 32/32 tests passing |
-| [BRV32P — 5-Stage Pipelined RV32IMC](https://github.com/BrendanJamesLynskey/RISCV_RV32IMC_5stage) | In-order 5-stage pipeline with full forwarding, 2-way set-associative caches, AXI4-Lite bus, branch prediction, M and C extensions |
 
 ## Arithmetic Units
 
@@ -25,32 +45,6 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 | Project | Description |
 |---------|-------------|
 | [Transformer Decoder — RTL Accelerator](https://github.com/BrendanJamesLynskey/LLM_Transformer_Decoder_RTL) | Synthesisable SystemVerilog implementation of a pre-norm decoder block with KV-cache, plus full verification suite (83 tests) |
-
-## Memory Management
-
-| Project | Description |
-|---------|-------------|
-| [MMU — Sv32 Memory Management Unit](https://github.com/BrendanJamesLynskey/MMU) | Synthesisable SystemVerilog Sv32 MMU with TLB, hardware page table walker, permission checking, and SFENCE.VMA support. Full SV + CocoTB verification suite (131 tests) |
-| [Cache Controller — MESI Coherence](https://github.com/BrendanJamesLynskey/Cache_Controller_MESI) | Synthesisable cache controller with MESI coherence, 4-way set-associative, write-back/write-allocate, true LRU, AXI4 bus interface, snoop handling, writeback buffer. Full SV + CocoTB verification suite (315 tests) |
-| [IOMMU — Sv32 I/O Memory Management Unit](https://github.com/BrendanJamesLynskey/RISCV_IOMMU) | Synthesisable RISC-V IOMMU with IOTLB, device context cache, Sv32 page table walker, AXI4 interfaces, register-based fault queue. Full SV + CocoTB verification suite (196 checks) |
-
-## Interrupt Controllers
-
-| Project | Description |
-|---------|-------------|
-| [RISCV_PLIC — Platform-Level Interrupt Controller](https://github.com/BrendanJamesLynskey/RISCV_PLIC) | Parameterised, synthesisable RISC-V PLIC in SystemVerilog — edge/level gateways, priority arbitration with tie-breaking, claim/complete handshake, memory-mapped register interface. Full SV + CocoTB verification suite (106 tests) |
-
-## On-Chip Interconnect
-
-| Project | Description |
-|---------|-------------|
-| [AXI4 Crossbar Interconnect](https://github.com/BrendanJamesLynskey/AXI4_Crossbar) | Parameterised AXI4 crossbar fabric in SystemVerilog — independent read/write paths, per-slave round-robin arbitration, ID-based response routing, internal error slave. Full verification suite (109 tests) |
-
-## DMA Controllers
-
-| Project | Description |
-|---------|-------------|
-| [RISCV_DMA — Multi-Channel DMA Controller](https://github.com/BrendanJamesLynskey/RISCV_DMA) | Multi-channel DMA controller — AXI4 master, scatter-gather, round-robin/fixed-priority arbiter. Full SV + CocoTB verification suite (282 tests) |
 
 ## Power Electronics
 
