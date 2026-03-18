@@ -36,7 +36,7 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 
 | Project | Description |
 |---------|-------------|
-| [RISCV_PLIC](https://github.com/BrendanJamesLynskey/RISCV_PLIC) | RISC-V Platform-Level Interrupt Controller — parameterised, synthesisable, edge/level gateways, claim/complete, memory-mapped registers |
+| [RISCV_PLIC — Platform-Level Interrupt Controller](https://github.com/BrendanJamesLynskey/RISCV_PLIC) | Parameterised, synthesisable RISC-V PLIC in SystemVerilog — edge/level gateways, priority arbitration with tie-breaking, claim/complete handshake, memory-mapped register interface. Full SV + CocoTB verification suite (106 tests) |
 
 ## On-Chip Interconnect
 
