@@ -1,6 +1,6 @@
 # Hardware
 
-A collection of synthesisable RTL designs, power electronics projects, and educational resources covering CPU architecture, arithmetic hardware, SoC design, and DC-DC converter control.
+A collection of synthesisable RTL designs, power electronics projects, and educational resources covering CPU architecture, arithmetic hardware, finite field (Galois Field) implementations, SoC design, and DC-DC converter control.
 
 ---
 
@@ -40,6 +40,14 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 | [Floating-Point Dividers](https://github.com/BrendanJamesLynskey/Floating_Point_Dividers) | Six IEEE 754 FP32 divider architectures — restoring, non-restoring, SRT-2, SRT-4, Newton-Raphson, and Goldschmidt |
 | [CORDIC](https://github.com/BrendanJamesLynskey/CORDIC) | Synthesisable SystemVerilog implementations of the CORDIC algorithm |
 | [Neural Network Data Types](https://github.com/BrendanJamesLynskey/NN_data_types) | SystemVerilog implementations of 9 numerical formats (FP32 down to FP4) used in NN training and inference hardware |
+
+## Finite Fields (Galois Fields) in Hardware
+
+| Project | Description |
+| --- | --- |
+| [Galois Fields in Hardware](https://github.com/BrendanJamesLynskey/Galois_Fields) | Interactive Reveal.js article on Galois Field (GF) theory for hardware engineers — GF(2) and GF(2^n) arithmetic, irreducible polynomials, and applications in CRC, LFSR, AES, and error-correcting codes, with interactive graphics |
+| [CRC — Cyclic Redundancy Checks](https://github.com/BrendanJamesLynskey/CRC) | SystemVerilog CRC implementations — bit-serial LFSR, byte-parallel table-based, and byte-parallel XOR-tree architectures with parameterised polynomials and self-checking testbenches |
+| [LFSR — Linear Feedback Shift Registers](https://github.com/BrendanJamesLynskey/LFSR) | SystemVerilog LFSR implementations — Fibonacci and Galois configurations, PRBS generators (PRBS-7/15/31), and additive scrambler/descrambler pairs with self-checking testbenches |
 
 ## ML Accelerator Hardware
 
