@@ -254,12 +254,72 @@
   <div class="card">
     <div class="num sym">⧉</div>
     <div class="info">
-      <h2>AXI4 Crossbar · MMU · MESI Cache · DMA · IOMMU · PLIC</h2>
-      <p>Independently verified SoC subsystems — parameterised NxM crossbar, Sv32 MMU/IOMMU, 4-way MESI L2, 4-channel DMA, priority-based PLIC</p>
+      <h2>AXI4 Crossbar</h2>
+      <p>Parameterised N×M AXI4 crossbar — round-robin arbitration, ID-based response routing, error slave, independent read/write paths</p>
     </div>
     <div class="action">
-      <span class="badge badge-rtl">6 repos</span>
-      <a href="https://github.com/BrendanJamesLynskey?tab=repositories&q=RISCV" class="btn btn-repo">repos →</a>
+      <span class="badge badge-rtl">RTL</span>
+      <a href="https://github.com/BrendanJamesLynskey/AXI4_Crossbar" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">⇄</div>
+    <div class="info">
+      <h2>MMU (Sv32)</h2>
+      <p>Sv32 MMU with fully-associative TLB, hardware page-table walker, permission checking and SFENCE.VMA support</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-rtl">RTL</span>
+      <a href="https://github.com/BrendanJamesLynskey/MMU" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">⌬</div>
+    <div class="info">
+      <h2>Cache Controller (MESI)</h2>
+      <p>4-way set-associative L2 cache with MESI coherence, write-back policy, snoop interface and AXI4 bus interface</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-rtl">RTL</span>
+      <a href="https://github.com/BrendanJamesLynskey/Cache_Controller_MESI" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">⇶</div>
+    <div class="info">
+      <h2>DMA Controller</h2>
+      <p>4-channel DMA with scatter-gather, AXI4 master interface and per-channel interrupts</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-rtl">RTL</span>
+      <a href="https://github.com/BrendanJamesLynskey/RISCV_DMA" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">⇌</div>
+    <div class="info">
+      <h2>IOMMU (Sv32)</h2>
+      <p>I/O address translation for DMA isolation — IOTLB, device-context cache and fault handling</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-rtl">RTL</span>
+      <a href="https://github.com/BrendanJamesLynskey/RISCV_IOMMU" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">⚡</div>
+    <div class="info">
+      <h2>PLIC</h2>
+      <p>Platform-Level Interrupt Controller — priority-based arbitration, configurable enable / threshold, claim/complete handshake</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-rtl">RTL</span>
+      <a href="https://github.com/BrendanJamesLynskey/RISCV_PLIC" class="btn btn-repo">repo →</a>
     </div>
   </div>
 
