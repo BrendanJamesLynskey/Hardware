@@ -2,6 +2,20 @@
 
 A collection of synthesisable RTL designs, power electronics projects, and educational resources covering CPU architecture, arithmetic hardware, finite field (Galois Field) implementations, SoC design, and DC-DC converter control.
 
+## ▶ [Open the Hardware Landing Page](https://brendanjameslynskey.github.io/Hardware/)
+
+> **Setup:** Enable GitHub Pages (Settings → Pages → Deploy from `main` branch, `/ (root)` directory).
+>
+> Alternatively, open `index.html` locally in any browser — all presentations work offline after first load.
+
+---
+
+## Interactive Presentations
+
+| Topic | Description |
+|-------|-------------|
+| [RISC-V — History, ISA &amp; Ecosystem](https://brendanjameslynskey.github.io/Hardware/risc-v/) | 29-slide deep dive on RISC-V: origins at Berkeley, base ISAs (RV32I/64I/32E/128I), the full extension alphabet (M·A·F·D·C·B·K·V·H), privilege modes, virtual memory, traps, RVV 1.0 vectors, hypervisor, custom extensions &amp; CHERIoT, vendor landscape, and the modern software ecosystem — with an **interactive instruction-format encoder** and a **mini RV32I CPU stepper** running Fibonacci |
+
 ---
 
 ## RISC-V SoC Platform
