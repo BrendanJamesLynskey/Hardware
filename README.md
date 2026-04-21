@@ -15,6 +15,7 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 | Topic | Description |
 |-------|-------------|
 | [RISC-V — History, ISA &amp; Ecosystem](https://brendanjameslynskey.github.io/Hardware/risc-v/) | 29-slide deep dive on RISC-V: origins at Berkeley, base ISAs (RV32I/64I/32E/128I), the full extension alphabet (M·A·F·D·C·B·K·V·H), privilege modes, virtual memory, traps, RVV 1.0 vectors, hypervisor, custom extensions &amp; CHERIoT, vendor landscape, and the modern software ecosystem — with an **interactive instruction-format encoder** and a **mini RV32I CPU stepper** running Fibonacci |
+| [Arm Cortex-M — 8-part Presentation Series](https://brendanjameslynskey.github.io/Cortex_M/) | Eight Reveal.js decks (~195 slides total) covering the Cortex-M family end-to-end: history of Arm (Acorn → ARM1 → Armv9), Cortex-M family (M0 → M85), Armv6-M / v7-M / v8-M architecture, programmer's model, NVIC exception model, memory system &amp; MPU, DSP / FPU / Helium (MVE), CoreSight debug &amp; trace, low-power design, and TrustZone for Armv8-M — with interactive core-picker and architecture-version picker |
 
 ---
 
@@ -45,6 +46,14 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 | Project | Description |
 |---------|-------------|
 | [BRV32 — Single-Cycle RV32I](https://github.com/BrendanJamesLynskey/RISCV_RV32I_SingleCycle) | Complete single-cycle RV32I SoC in Verilog-2001 — CPU, GPIO, UART, Timer, machine-mode CSRs. 32/32 tests passing |
+
+## Arm Cortex-M CPUs
+
+Eight-part interactive Reveal.js presentation series covering the Arm Cortex-M family end-to-end — designed as interview preparation for embedded-systems, firmware, and silicon engineers.
+
+| Project | Description |
+|---------|-------------|
+| [Arm Cortex-M Presentation Series](https://github.com/BrendanJamesLynskey/Cortex_M) | Complete Cortex-M interview prep — history of Arm (Acorn → ARM1 → Armv9), Cortex-M family from M0 through M85, Armv6-M / v7-M / v8-M architecture &amp; programmer's model, NVIC exception model (vector table, tail-chaining, late arrival, lazy FP stacking), memory system &amp; MPU, DSP / FPU / Helium (MVE), CoreSight debug &amp; trace, low-power design, and TrustZone for Armv8-M. [Live on GitHub Pages.](https://brendanjameslynskey.github.io/Cortex_M/) |
 
 ## Arithmetic Units
 
