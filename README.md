@@ -89,4 +89,4 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 
 | Project | Description |
 |---------|-------------|
-| [VHDL Example Code](https://github.com/BrendanJamesLynskey/VHDL_example_code) | Example VHDL coding samples |
+| [VHDL Example Code](https://github.com/BrendanJamesLynskey/VHDL_example_code) | AHB-to-MII Ethernet MAC (10/100) with AMBA AHB host interface, testbench, and verification plans — authored 2007–2008 as the author's MSc project in Low Power Systems Integration at the University of Manchester (completed with distinction); contributed as an I/O block to the SpiNNaker neuromorphic chip |
