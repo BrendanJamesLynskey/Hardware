@@ -74,6 +74,7 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 | Project | Description |
 |---------|-------------|
 | [Transformer Decoder — RTL Accelerator](https://github.com/BrendanJamesLynskey/LLM_Transformer_Decoder_RTL) | Synthesisable SystemVerilog implementation of a pre-norm decoder block with KV-cache, plus full verification suite (83 tests) |
+| [Hardware Matrix Multiplier Units (MMUL) — Research Brief](MMUL_research_brief.md) | Dense technical reference on MMUL hardware in AI accelerators — history (Kung/Leiserson 1978/82, iWarp, TPU v1, V100), architectures (systolic / weight-stationary / row-stationary / dot-product trees), number formats (FP32/TF32/BF16/FP8/FP6/FP4/MXFP/NVFP4), and real-world examples (TPU, H100, B200, Cerebras WSE-3, Groq LPU, Tesla Dojo, Trainium2, ANE, AMX, SME, Tenstorrent) |
 
 ## Power Electronics
 
