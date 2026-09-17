@@ -92,12 +92,14 @@ needed.
 
 | Project | Description |
 |---------|-------------|
+| **[Signal Integrity &amp; High-Speed Digital Design](https://github.com/BrendanJamesLynskey/Signal_Integrity)** | **The main series: eleven interactive decks, 130 slides.** Transmission lines, return paths, materials and causality, vias and back-drilling, differential signalling, crosstalk, power integrity, jitter, timing budgets, measurement and de-embedding, and channel operating margin. Every number computed by a model and checked against published worked examples |
 | [Equalisation in High-Speed Serial Links](https://github.com/BrendanJamesLynskey/SerDes_Equalisation) | A 28 GBd backplane channel worked from S-parameters to a closed link budget: pulse response, CTLE / FFE / DFE, noise budget, PAM4 and FEC, chiplets, serial memory and CXL. Interactive channel and equaliser widgets, plus a long-form PDF |
 | [Matrix Methods in Network Parameters](https://github.com/BrendanJamesLynskey/Matrix_Methods_Network_Parameters) | The S-, Z- and Y-parameter theory the channel description rests on — reciprocity, passivity, losslessness, mixed-mode and skew-driven mode conversion, causality and the Smith chart |
 | [Matrix Concepts in Digital Filters](https://github.com/BrendanJamesLynskey/Matrix_Concepts_Digital_Filters) | The filter theory the equalisers rest on — state-space stability, Wiener–Hopf optimal taps, the eigenfilter, paraunitary banks |
 | [Kramers–Kronig Relations](https://github.com/BrendanJamesLynskey/Kramers_Kronig_Relations) | Causality and the analyticity that ties magnitude to phase — the constraint every fitted channel model has to honour |
 | [High-Speed Serial Links — interview preparation](https://github.com/BrendanJamesLynskey/Interview_High_Speed_Serial_Links) | Written notes and worked problems: link budgets, driver architectures, PLL jitter, CTLE / DFE / CDR, PCIe Gen5-6, UCIe, NVLink, eye analysis, crosstalk and PDN coupling |
 | [LPDDRx Layout — interview preparation](https://github.com/BrendanJamesLynskey/Interview_LPDDRx_Layout) | The parallel-bus side of the same problem: memory interface layout, skew, and termination |
+| [Matrix Articles](https://github.com/BrendanJamesLynskey/Matrix_Articles) | The sources and computed models behind all of the above — the channel model, the 2-D field solver, and one module per signal-integrity deck |
 
 ## SoC Design
 
