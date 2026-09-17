@@ -20,6 +20,7 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 | [Arm Cortex-A — 6-part Presentation Series](https://brendanjameslynskey.github.io/Cortex_A/) | Six Reveal.js decks (~104 slides total) on the Arm application-profile family end-to-end: history &amp; family (ARM11 → A9 → A15 + big.LITTLE → A53/A57 AArch64 pivot → A76/A78 → Cortex-X1 → X925), Armv8-A / Armv9-A architecture &amp; Exception Levels, memory system (VMSA, TLBs, caches, weak ordering, LSE atomics), vector extensions (NEON · SVE · SVE2 · SME), security (TrustZone-A · PAC · BTI · MTE · RME / CCA), and microarchitecture (OoO, branch prediction, DynamIQ, PMU / SPE / TRBE) — with interactive Cortex-A core picker and EL selector |
 | [Arm Neoverse — 5-part Presentation Series](https://brendanjameslynskey.github.io/Neoverse/) | Five Reveal.js decks (~80 slides total) on Arm's infrastructure-class CPU family: history &amp; product lines (N1 / V1 / E1 / N2 / V2 / N3 / V3), microarchitecture &amp; server-class RAS, the CMN-600 / 650 / 700 / S3 mesh interconnect (RN-F / HN-F / SN-F / SLC slicing / CHI), SBSA + SystemReady + the platform contract (ACPI, PSCI, TF-A, EDK2), and the ecosystem — AWS Graviton 1-4, Ampere Altra / AmpereOne, NVIDIA Grace-Hopper, Microsoft Cobalt, Alibaba Yitian, SiPearl Rhea, Fujitsu A64FX — with interactive Neoverse-silicon picker |
 | [Arm System IP — 4-part Presentation Series](https://brendanjameslynskey.github.io/Arm_System_IP/) | Four Reveal.js decks (~64 slides total) on the system IP that surrounds every Arm CPU: GIC (v2/v3/v4, GIC-400/500/600/700, SPI/PPI/SGI/LPI, ITS, vGIC), SMMU (v2/v3, SMMU-600/700, stream tables, stages 1+2, ATS/PASID/PRI, IORT), DynamIQ Shared Unit (DSU-110/120/120AE, shared L3, per-core DVFS, CHI egress), and MPAM + CoreSight (memory-system partitioning, Linux resctrl, DAP/ETM/ITM/STM/CTI/TRBE) |
+| [Equalisation in High-Speed Serial Links](https://brendanjameslynskey.github.io/SerDes_Equalisation/) | One 28 GBd backplane channel taken end to end — S-parameters, the pulse response, CTLE / transmit FFE / receive FFE / DFE, a noise budget that lands 1.36 dB short of 10<sup>&minus;12</sup>, and seven remedies priced in dB. Covers the standards taxonomy (PCIe, IEEE 802.3, OIF CEI), laminate materials, PAM4 and FEC, chiplets, serial memory and CXL — with interactive via-stub and full-equaliser-chain widgets. Long-form PDF alongside |
 
 ---
 
@@ -83,11 +84,26 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 | [DC-DC Converter Control Techniques](https://github.com/BrendanJamesLynskey/DCDC_Control_Techniques) | Interactive Reveal.js presentation covering PWM (voltage-mode, peak/valley/average current-mode), PFM, hysteretic, and constant on-time (COT) control — with interactive waveform and efficiency graphics, tradeoff comparisons, and future directions including digital control and GaN |
 | [COT DC-DC Converter](https://github.com/BrendanJamesLynskey/COT_DCDC_Simulink) | MATLAB/Simulink constant on-time DC-DC converter model, adapted from the NPTEL course on switched mode power converter control |
 
+## Signal Integrity &amp; High-Speed Digital Design
+
+Material on getting a signal from one chip to another intact — the physics of the channel,
+the equalisation that rescues it, and the layout practice that decides how much rescuing is
+needed.
+
+| Project | Description |
+|---------|-------------|
+| [Equalisation in High-Speed Serial Links](https://github.com/BrendanJamesLynskey/SerDes_Equalisation) | A 28 GBd backplane channel worked from S-parameters to a closed link budget: pulse response, CTLE / FFE / DFE, noise budget, PAM4 and FEC, chiplets, serial memory and CXL. Interactive channel and equaliser widgets, plus a long-form PDF |
+| [Matrix Methods in Network Parameters](https://github.com/BrendanJamesLynskey/Matrix_Methods_Network_Parameters) | The S-, Z- and Y-parameter theory the channel description rests on — reciprocity, passivity, losslessness, mixed-mode and skew-driven mode conversion, causality and the Smith chart |
+| [Matrix Concepts in Digital Filters](https://github.com/BrendanJamesLynskey/Matrix_Concepts_Digital_Filters) | The filter theory the equalisers rest on — state-space stability, Wiener–Hopf optimal taps, the eigenfilter, paraunitary banks |
+| [Kramers–Kronig Relations](https://github.com/BrendanJamesLynskey/Kramers_Kronig_Relations) | Causality and the analyticity that ties magnitude to phase — the constraint every fitted channel model has to honour |
+| [High-Speed Serial Links — interview preparation](https://github.com/BrendanJamesLynskey/Interview_High_Speed_Serial_Links) | Written notes and worked problems: link budgets, driver architectures, PLL jitter, CTLE / DFE / CDR, PCIe Gen5-6, UCIe, NVLink, eye analysis, crosstalk and PDN coupling |
+| [LPDDRx Layout — interview preparation](https://github.com/BrendanJamesLynskey/Interview_LPDDRx_Layout) | The parallel-bus side of the same problem: memory interface layout, skew, and termination |
+
 ## SoC Design
 
 | Project | Description |
 |---------|-------------|
-| [Modern SoC Design](https://github.com/BrendanJamesLynskey/SoC) | Interactive presentation series — advanced packaging, chiplets, on-chip interconnect/NoC, memory hierarchies, and high-speed SerDes |
+| [Modern SoC Design](https://github.com/BrendanJamesLynskey/SoC) | Interactive presentation series — advanced packaging, chiplets, on-chip interconnect/NoC, memory hierarchies, and high-speed SerDes. Decks 01, 04, 08 and 09 sit directly alongside the signal-integrity material above |
 
 ## HDL Examples
 
