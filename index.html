@@ -127,6 +127,8 @@
   }
   .badge-complete { background: rgba(16,185,129,.12); color: var(--green); border: 1px solid rgba(16,185,129,.25); }
   .badge-rtl      { background: rgba(96,165,250,.12); color: var(--blue);  border: 1px solid rgba(96,165,250,.25); }
+  .badge-planned  { background: transparent; color: var(--dim); border: 1px dashed var(--border); }
+  .section-intro  { color: var(--text2); font-size: 0.9rem; margin: -0.4rem 0 1rem; }
   .badge-new      { background: rgba(245,158,11,.12); color: var(--accent); border: 1px solid rgba(245,158,11,.28); }
 
   footer {
@@ -153,7 +155,7 @@
 <header>
   <div class="icon">⚙︎</div>
   <h1>Hardware</h1>
-  <div class="subtitle">RTL · CPU Architecture · Power Electronics · Interactive Presentations</div>
+  <div class="subtitle">RTL · CPU Architecture · Power Electronics · Optical Technology · Interactive Presentations</div>
   <p>A collection of synthesisable RTL designs, SoC subsystems, arithmetic hardware, and interactive educational presentations covering modern hardware engineering topics. Browse the interactive decks below, or follow the repo links for the underlying source code.</p>
 </header>
 
@@ -282,30 +284,6 @@
   </div>
 
   <div class="card">
-    <div class="num sym">◎</div>
-    <div class="info">
-      <h2>Fourier Optics for Inference</h2>
-      <p>Fourier optics for engineers: the 4f system, ENOB, conversion energy · Where transforms appear in LLM inference: an Amdahl analysis · Optical prefill pools, simulated: heterogeneous pools, break-even points and compute in transit for the KV hand-off, with a live in-browser simulator</p>
-    </div>
-    <div class="action">
-      <span class="badge badge-complete">3 decks + code</span>
-      <a href="https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Inference/" class="btn btn-launch">▶ Launch</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="num sym">◎</div>
-    <div class="info">
-      <h2>Fourier Optics for Training</h2>
-      <p>Transforms in training workloads: the backward pass, weight-masked and data-by-data products, and a training-step Amdahl explorer · Optical backpropagation and in-situ training, with a live three-trainer demo · Optical engines in a training cluster: mask rewrites per step, layer-major scheduling and DeMo</p>
-    </div>
-    <div class="action">
-      <span class="badge badge-complete">3 decks + code</span>
-      <a href="https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Training/" class="btn btn-launch">▶ Launch</a>
-    </div>
-  </div>
-
-  <div class="card">
     <div class="num sym">⚙</div>
     <div class="info">
       <h2>Simulation Engineering Toolkit</h2>
@@ -386,6 +364,85 @@
     <div class="action">
       <span class="badge badge-new">NEW · web app</span>
       <a href="https://systolic-arrays-explained.vercel.app/" class="btn btn-launch">▶ Launch</a>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="section-head">Optical Technology</h2>
+<p class="section-intro">Light as interconnect and as compute. Silicon Photonics Fundamentals is the foundation: the device physics the other series link to instead of re-explaining.</p>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="num sym">≋</div>
+    <div class="info">
+      <h2>Silicon Photonics Fundamentals</h2>
+      <p>Waveguides, couplers and WDM, with a mode solver in the browser · Mach–Zehnder and ring modulators, germanium photodiodes, with a modulator explorer · Lasers, packaging and the energy-per-bit budget, with a link-budget explorer. The device glossary the data-centre and AI-processing series build on</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-new">NEW · 3 decks</span>
+      <a href="https://brendanjameslynskey.github.io/Optical_Hub_Silicon_Photonics/" class="btn btn-launch">▶ Launch</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">⇄</div>
+    <div class="info">
+      <h2>Optical Technology for Data Centres</h2>
+      <p>Pluggables to linear-drive optics · Co-packaged optics · Optical circuit switching · Optical networks for AI clusters</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-planned">planned</span>
+      <a href="https://github.com/BrendanJamesLynskey/Optical_Hub_Data_Centres" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">◈</div>
+    <div class="info">
+      <h2>Optical Technology for AI Processing</h2>
+      <p>Optical and photonic compute for AI workloads: where light can do the arithmetic, and what the converters and lasers around it cost</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-planned">planned</span>
+      <a href="https://github.com/BrendanJamesLynskey/Optical_Hub_AI_Processing" class="btn btn-repo">repo →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">◎</div>
+    <div class="info">
+      <h2>Fourier Optics for Inference</h2>
+      <p>Fourier optics for engineers: the 4f system, ENOB, conversion energy · Where transforms appear in LLM inference: an Amdahl analysis · Optical prefill pools, simulated: heterogeneous pools, break-even points and compute in transit for the KV hand-off, with a live in-browser simulator</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-complete">3 decks + code</span>
+      <a href="https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Inference/" class="btn btn-launch">▶ Launch</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">◎</div>
+    <div class="info">
+      <h2>Fourier Optics for Training</h2>
+      <p>Transforms in training workloads: the backward pass, weight-masked and data-by-data products, and a training-step Amdahl explorer · Optical backpropagation and in-situ training, with a live three-trainer demo · Optical engines in a training cluster: mask rewrites per step, layer-major scheduling and DeMo</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-complete">3 decks + code</span>
+      <a href="https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Training/" class="btn btn-launch">▶ Launch</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="num sym">↯</div>
+    <div class="info">
+      <h2>Compute in Transit</h2>
+      <p>The follow-on to Fourier Optics for Inference: computing on LLM training and inference traffic as it crosses a link, including a photonic link module (arXiv:2608.21536), its operations-per-byte budget, frequency-domain gradient compression and the KV hand-off</p>
+    </div>
+    <div class="action">
+      <span class="badge badge-complete">5 decks + code</span>
+      <a href="https://brendanjameslynskey.github.io/LLM_Hub_Compute_in_Transit/" class="btn btn-launch">▶ Launch</a>
     </div>
   </div>
 
