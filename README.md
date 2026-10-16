@@ -4,9 +4,7 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 
 ## ▶ [Open the Hardware Landing Page](https://brendanjameslynskey.github.io/Hardware/)
 
-> **Setup:** Enable GitHub Pages (Settings → Pages → Deploy from `main` branch, `/ (root)` directory).
->
-> Alternatively, open `index.html` locally in any browser — all presentations work offline after first load.
+> Every presentation also works offline: open `index.html` locally in any browser after its first load.
 
 ---
 
