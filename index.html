@@ -151,6 +151,22 @@
 <!-- portfolio-strip:start (brief 40) -->
 <style>.bl-strip{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .6rem;box-sizing:border-box;width:100%;align-self:stretch;margin:0;padding:.45rem 1rem;background:var(--bg-card,var(--surface,var(--bg2,rgba(127,127,127,.08))));border-bottom:1px solid var(--border,rgba(127,127,127,.25));color:var(--text-secondary,var(--text2,var(--fg-dim,var(--muted,inherit))));font:500 13px/1.5 var(--font-body,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif);letter-spacing:.01em;position:relative;z-index:50;text-align:left}.bl-strip b{color:var(--text-primary,var(--text,var(--fg,inherit)));font-weight:700}.bl-strip a{color:var(--text-primary,var(--text,var(--fg,inherit)));text-decoration:underline;text-decoration-color:var(--accent,currentColor);text-decoration-thickness:2px;text-underline-offset:4px;padding:.15rem 0}.bl-strip a:hover,.bl-strip a:focus-visible{text-decoration-thickness:3px}.bl-strip span{opacity:.6}</style>
 <!-- portfolio-strip:end -->
+<!-- series-index:start (brief 45) -->
+<style>
+  .series-index { background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+                  padding: 1.25rem 1.5rem; margin: 0 0 2.5rem; }
+  .series-index h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.35rem; color: #fafafa;
+                     margin: 0 0 0.75rem; }
+  .series-index ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                     gap: 0.55rem 1.5rem; }
+  .series-index li { font-size: 0.85rem; color: var(--text2); line-height: 1.45; overflow-wrap: anywhere; }
+  .series-index a { display: inline-block; color: #fafafa; font-weight: 700; font-size: 0.95rem;
+                    text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px;
+                    text-underline-offset: 3px; padding: 0.1rem 0; }
+  .series-index a:hover, .series-index a:focus-visible { color: var(--accent); }
+  .series-index li span { display: block; }
+</style>
+<!-- series-index:end -->
 </head>
 <body>
 <!-- portfolio-strip:start (brief 40) -->
@@ -164,6 +180,28 @@
   <div class="subtitle">RTL · CPU Architecture · Power Electronics · Optical Technology · Interactive Presentations</div>
   <p>A collection of synthesisable RTL designs, SoC subsystems, arithmetic hardware, and interactive educational presentations covering modern hardware engineering topics. Browse the interactive decks below, or follow the repo links for the underlying source code.</p>
 </header>
+<!-- series-index:start (brief 45) -->
+<nav class="series-index" aria-labelledby="series-h">
+  <h2 id="series-h">Series in this index</h2>
+  <ul>
+    <li><a href="https://github.com/BrendanJamesLynskey/Signal_Integrity">Signal Integrity &amp; High-Speed Digital Design</a><span>The main series: seventeen interactive decks in five sections, from transmission lines to channel operating margin, every number computed by a model</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Optical_Hub_Silicon_Photonics/">Silicon Photonics Fundamentals</a><span>Waveguides, couplers and WDM, with a mode solver running in the browser; the foundation of the optical series</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Optical_Hub_Data_Centres/">Optical Technology for Data Centres</a><span>Pluggable transceivers and where their watts go, co-packaged optics and optical switching</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Optical_Hub_AI_Processing/">Optical Technology for AI Processing</a><span>Can light do the arithmetic of AI? A map of optical computing and its costs</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Inference/">Fourier Optics for Inference</a><span>Whether Fourier optics could accelerate disaggregated LLM inference, physics and bill included</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Training/">Fourier Optics for Training</a><span>The companion series on LLM training: the backward pass in the frequency domain</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/LLM_Hub_Compute_in_Transit/">Compute in Transit</a><span>Computing on LLM traffic as it crosses a link, with an experiment and a results site</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/FHE_Hub_Accelerator_Simulators/">FHE Accelerator Simulators</a><span>Simulating an accelerator for CKKS bootstrapping, with a live in-browser simulator</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/SimEng_Hub_Toolkit/">Simulation Engineering Toolkit</a><span>Rust and PyO3, SystemC TLM-2.0, memory models, cocotb, CI, specifications and PPA around a simulator</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Cortex_M/">Arm Cortex-M</a><span>Eight decks on the microcontroller family, from Acorn to Armv8-M</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Cortex_A/">Arm Cortex-A</a><span>Six decks on the application-profile family</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Neoverse/">Arm Neoverse</a><span>Five decks on Arm's infrastructure CPUs and the CMN mesh</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/AMBA/">Arm AMBA</a><span>Six decks: AHB and APB, AXI, ACE and CHI coherency</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Arm_System_IP/">Arm System IP</a><span>Four decks: GIC, SMMU, the DynamIQ Shared Unit, MPAM and CoreSight</span></li>
+    <li><a href="https://github.com/BrendanJamesLynskey/SoC">Modern SoC Design</a><span>Packaging, chiplets, NoCs, memory hierarchies and high-speed SerDes</span></li>
+  </ul>
+</nav>
+<!-- series-index:end -->
 
 <h2 class="section-head">Interactive Presentations</h2>
 
@@ -600,7 +638,7 @@
     <div class="num sym">∑</div>
     <div class="info">
       <h2>Transformer Decoder — RTL Accelerator</h2>
-      <p>Synthesisable SystemVerilog implementation of a pre-norm transformer decoder block with KV-cache, plus full verification suite (83 tests passing)</p>
+      <p>Synthesisable SystemVerilog implementation of a pre-norm transformer decoder block with KV-cache, plus full verification suite (84 tests passing)</p>
     </div>
     <div class="action">
       <span class="badge badge-rtl">RTL</span>

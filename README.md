@@ -8,6 +8,30 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 
 ---
 
+## Series in this index
+
+| Series | What it covers |
+| --- | --- |
+| **[Signal Integrity &amp; High-Speed Digital Design](https://github.com/BrendanJamesLynskey/Signal_Integrity)** | The main series: seventeen interactive decks in five sections, from transmission lines to channel operating margin, every number computed by a model |
+| **[Silicon Photonics Fundamentals](https://brendanjameslynskey.github.io/Optical_Hub_Silicon_Photonics/)** | Waveguides, couplers and WDM, with a mode solver running in the browser; the foundation of the optical series |
+| **[Optical Technology for Data Centres](https://brendanjameslynskey.github.io/Optical_Hub_Data_Centres/)** | Pluggable transceivers and where their watts go, co-packaged optics and optical switching |
+| **[Optical Technology for AI Processing](https://brendanjameslynskey.github.io/Optical_Hub_AI_Processing/)** | Can light do the arithmetic of AI? A map of optical computing and its costs |
+| **[Fourier Optics for Inference](https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Inference/)** | Whether Fourier optics could accelerate disaggregated LLM inference, physics and bill included |
+| **[Fourier Optics for Training](https://brendanjameslynskey.github.io/LLM_Hub_Fourier_Optics_Training/)** | The companion series on LLM training: the backward pass in the frequency domain |
+| **[Compute in Transit](https://brendanjameslynskey.github.io/LLM_Hub_Compute_in_Transit/)** | Computing on LLM traffic as it crosses a link, with an experiment and a results site |
+| **[FHE Accelerator Simulators](https://brendanjameslynskey.github.io/FHE_Hub_Accelerator_Simulators/)** | Simulating an accelerator for CKKS bootstrapping, with a live in-browser simulator |
+| **[Simulation Engineering Toolkit](https://brendanjameslynskey.github.io/SimEng_Hub_Toolkit/)** | Rust and PyO3, SystemC TLM-2.0, memory models, cocotb, CI, specifications and PPA around a simulator |
+| **[Arm Cortex-M](https://brendanjameslynskey.github.io/Cortex_M/)** | Eight decks on the microcontroller family, from Acorn to Armv8-M |
+| **[Arm Cortex-A](https://brendanjameslynskey.github.io/Cortex_A/)** | Six decks on the application-profile family |
+| **[Arm Neoverse](https://brendanjameslynskey.github.io/Neoverse/)** | Five decks on Arm's infrastructure CPUs and the CMN mesh |
+| **[Arm AMBA](https://brendanjameslynskey.github.io/AMBA/)** | Six decks: AHB and APB, AXI, ACE and CHI coherency |
+| **[Arm System IP](https://brendanjameslynskey.github.io/Arm_System_IP/)** | Four decks: GIC, SMMU, the DynamIQ Shared Unit, MPAM and CoreSight |
+| **[Modern SoC Design](https://github.com/BrendanJamesLynskey/SoC)** | Packaging, chiplets, NoCs, memory hierarchies and high-speed SerDes |
+
+Each series has its own page; the sections below list them with the rest of the hardware work.
+
+---
+
 ## Interactive Presentations
 
 | Topic | Description |
@@ -91,7 +115,7 @@ A complete RISC-V System-on-Chip built from independently verified subsystems.
 
 | Project | Description |
 |---------|-------------|
-| [Transformer Decoder — RTL Accelerator](https://github.com/BrendanJamesLynskey/LLM_Transformer_Decoder_RTL) | Synthesisable SystemVerilog implementation of a pre-norm decoder block with KV-cache, plus full verification suite (83 tests) |
+| [Transformer Decoder — RTL Accelerator](https://github.com/BrendanJamesLynskey/LLM_Transformer_Decoder_RTL) | Synthesisable SystemVerilog implementation of a pre-norm decoder block with KV-cache, plus full verification suite (84 tests) |
 | [AI Matrix Multiplier Units (MMUL)](https://github.com/BrendanJamesLynskey/AI_MMUL_Unit) | Hardware deep-dive on the MMUL — the kernel of every AI accelerator. 24-slide interactive presentation covering history (Kung 1978/82 → TPU → V100 → Blackwell), four dataflow architectures (output-/weight-/input-/row-stationary, dot-product trees), Transformer mapping (Q/K/V/FFN GEMMs), number formats (FP32 → FP4, MXFP, NVFP4), real systems (TPU/Trillium, H100/B200, Cerebras WSE-3, Groq, Dojo, Trainium2, ANE, AMX, SME, Sohu, Tenstorrent), memory hierarchy & caches, performance, power and thermals — with four parameterised SystemVerilog implementations, a Python golden model, and 258 passing tests (SV + CocoTB) |
 | [Systolic Arrays Explained](https://github.com/BrendanJamesLynskey/systolic-arrays-explained) | Interactive web app at [systolic-arrays-explained.vercel.app](https://systolic-arrays-explained.vercel.app/): the matrix hardware under the models in 9 animated chapters — the memory wall, weight-/output-/input-stationary cycle by cycle, skew, fill and drain, tiling with double-buffered weights, inside a PE (bfloat16/FP16/INT8 MAC pipeline), the TPU and a torus all-reduce, row-stationary and tensor cores, an ONNX graph lowered onto the array. Every frame comes from a cycle-accurate model (Python reference, exact TypeScript port) checked against the author's SystemVerilog array and MAC unit in Verilator |
 
