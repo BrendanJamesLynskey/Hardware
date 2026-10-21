@@ -1,3 +1,7 @@
+<!-- portfolio-strip:start (brief 40) -->
+<sub>**Brendan Lynskey** · [Portfolio home](https://brendanjameslynskey.github.io/) · [Interactive sites](https://brendanjameslynskey.github.io/#sites)</sub>
+<!-- portfolio-strip:end -->
+
 # Hardware
 
 A collection of synthesisable RTL designs, power electronics projects, and educational resources covering CPU architecture, arithmetic hardware, finite field (Galois Field) implementations, SoC design, and DC-DC converter control.
