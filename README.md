@@ -10,6 +10,8 @@ A collection of synthesisable RTL designs, power electronics projects, and educa
 
 ## Series in this index
 
+15 of the library's 64 series (a series is one hub page that lists its decks).
+
 | Series | What it covers |
 | --- | --- |
 | **[Signal Integrity &amp; High-Speed Digital Design](https://github.com/BrendanJamesLynskey/Signal_Integrity)** | The main series: seventeen interactive decks in five sections, from transmission lines to channel operating margin, every number computed by a model |
